@@ -1,0 +1,37 @@
+// error message styles
+.add-option-error{
+    color: $off-white;
+    font-style: italic;
+    padding: 0 $medium-size;
+    margin: $medium-size 0 0 0;
+}
+
+// add option form styles
+.add-option{
+    display: flex;
+    padding: $medium-size;
+}
+
+.add-option__input{
+    flex-grow: 1;
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($color: $dark-blue, $amount: 10%);
+    margin-right: $s-size;
+    color: $off-white;
+    padding:$s-size;
+}
+
+.add-option__input-error{
+    background: lighten($color: yellow, $amount: 20%);
+}
+
+@media (max-width:$small-device-breakpoint) {
+    .add-option{
+        flex-direction: column;
+    }
+
+    .add-option__input{
+        margin: 0 0 $s-size 0;
+    }
+}
